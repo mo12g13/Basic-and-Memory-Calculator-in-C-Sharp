@@ -196,7 +196,7 @@ namespace BasicCalculatorProject12_1
             two.Text = "";
             value2 = "";
         }
-
+//A method that backspace value display in the calculator
         public static void BackSpace(Label value)
         {
             if (value.Text == "0")
@@ -218,6 +218,7 @@ namespace BasicCalculatorProject12_1
 
             }
         }
+        // A method the keeps track of the current value entered by the user
         public static string EnterValue(string enterValue)
         {
             return enterValue;
