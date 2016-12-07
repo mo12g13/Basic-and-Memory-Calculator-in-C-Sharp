@@ -104,7 +104,7 @@ namespace BasicCalculatorProject12_1
             //Calling the equals method from the Calculator class that was inherited
             calculatedValue = memorycalculator.Equals(operatorValueStore);
             memorycalculator.CurrentValue = calculatedValue; //Assigning the currentValue to a currentValue string
-            valueEnter = memorycalculator.CurrentValue;
+            valueEnter = memorycalculator.CurrentValue;//Current value in the calculator
 
 
             lblResult.Text = calculatedValue;//set the calculated value in the lblResult.Text label
@@ -119,7 +119,7 @@ namespace BasicCalculatorProject12_1
 
 
         }
-        //A method that enables the M button when there is a value in memory.
+        //A method that enables the memory button when there is a value in memory.
         public void memoryActive()
         {
             if (!finalMemoryValue.ToString().Equals("0"))
@@ -131,7 +131,7 @@ namespace BasicCalculatorProject12_1
                 btnMemoryContainValue.Enabled = false;
             }
         }
-        // A method that listens for the various button and perform respective operation
+        // A method that listens for the various memory buttons and perform respective operation
         private void memoryButtonsClick(object sender, EventArgs e)
         {
             Button buttValue = (Button)sender;
@@ -243,7 +243,7 @@ namespace BasicCalculatorProject12_1
             }
 
         }
-        // A event handler that opens the frmBasicCalculator when the memory calculator tool strip menu of standard calculator is clicked
+        // A event handler that opens the frmBasicCalculator on the memory calculator tool strip menu when standard calculator is clicked
         private void memoryCalculatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -257,7 +257,7 @@ namespace BasicCalculatorProject12_1
             Application.Run(new frmBasicCalculator());
 
         }
-        // An form event that loads disable the M button on the form
+        // A form event that loads and disable the M button on the calculator
         private void frmMemoryCalculator_Load(object sender, EventArgs e)
         {
             btnMemoryContainValue.Enabled = false;

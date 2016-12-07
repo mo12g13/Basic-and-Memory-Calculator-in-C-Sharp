@@ -9,9 +9,9 @@ namespace BasicCalculatorProject12_1
 {
     class Calculator
     {
-        private decimal first_Value;
-        private decimal second_Value;
-        private Stack<string> valueEnter;
+        private decimal first_Value;// First enter into the calculator
+        private decimal second_Value;// Second value entered into the calculator
+        
         private string currentEnterValue;
 
         //This method returns the current value in the label
@@ -19,18 +19,8 @@ namespace BasicCalculatorProject12_1
         {
             this.FirstValue = firstValue;
             this.SecondValue = secondValue;
-            this.valueEnter = new Stack<string>();
-        }
-
-        //A method that stores the first two value entered into the calculator
-        public Stack<string> EnterValue(string firstValue, string secondValue)
-        {
-            firstValue = FirstValue.ToString();
-            secondValue = SecondValue.ToString();
-            valueEnter.Push(secondValue);
-            valueEnter.Push(firstValue);
-            return valueEnter;
-        }
+            
+        }      
 
         //A property that gets and sets the current value display in the calculator
         public String CurrentValue

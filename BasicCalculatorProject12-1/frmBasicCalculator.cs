@@ -87,6 +87,7 @@ namespace BasicCalculatorProject12_1
             lblResult.Text = "";
 
         }
+        // The equal button event handler 
         private void EqualPress(object sender, EventArgs e)
         {
             lblresultDisplayBox.Text = "";
@@ -199,7 +200,7 @@ namespace BasicCalculatorProject12_1
             }
 
         }
-        // A thread that loads the memory calculator when tool strip of Memory calulator is clicked
+        // A thread that loads the memory calculator when the  tool strip of Memory calulator is clicked
         private void memoryCalculatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
