@@ -262,5 +262,13 @@ namespace BasicCalculatorProject12_1
         {
             btnMemoryContainValue.Enabled = false;
         }
+        //An event handler that clears the valuse display in the txtBox
+       private void btnClear_Click(object sender, EventArgs e)
+        {
+            MemoryCalculator.Clear(lblResult,operatorValueStore,lblresultDisplayBox, operatorValueStore);
+            lblresultDisplayBox.Text = "";
+            btnEqual.Focus();
+
+        }
     }      
  }

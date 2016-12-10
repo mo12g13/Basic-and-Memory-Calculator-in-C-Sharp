@@ -90,7 +90,7 @@ namespace BasicCalculatorProject12_1
             {
                 return "Can't divide by zero";
             }
-            return value.ToString("N6");
+            return value.ToString("N2");
         }
 
         //A method that returns a squareroot of number enter by the user
@@ -128,7 +128,7 @@ namespace BasicCalculatorProject12_1
                 return "Can't divide by zero";
 
             }
-            return answer.ToString("N5");
+            return answer.ToString("N4");
 
 
         }
@@ -186,7 +186,7 @@ namespace BasicCalculatorProject12_1
             two.Text = "";
             value2 = "";
         }
-//A method that backspace value display in the calculator
+//A method that backspace value display in the calculator textbox
         public static void BackSpace(Label value)
         {
             if (value.Text == "0")
