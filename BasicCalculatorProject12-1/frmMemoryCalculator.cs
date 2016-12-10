@@ -92,6 +92,7 @@ namespace BasicCalculatorProject12_1
             lblResult.Text = "";
 
         }
+        //An event handler that fires when the equal button is pressed
         private void EqualButtonPress(object sender, EventArgs e)
         {
             lblresultDisplayBox.Text = ""; //if the user presses the equals button set the label to empty string
